@@ -72,7 +72,7 @@ PLATFORMS
 DEPENDENCIES
   rbs
   steep (~> 1.6)
-  typeprof
+  typeprof (~> 0.21.8)
 
 BUNDLED WITH
    2.4.20
