@@ -20,7 +20,7 @@ $ sh lib/clean.sh
 ### 型チェック
 ```bash
 # 型チェック
-$ docker exec -it playground bundle exec rbs -Isig validate --silent
+$ docker exec -it playground bundle exec steep check
 
 # gemの型更新
 $ docker exec -it playground bundle exec rbs collection update
