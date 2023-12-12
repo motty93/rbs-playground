@@ -1,5 +1,9 @@
 def hello_ruby
   puts "Hello Ruby!"
+
+  return 'hello_ruby'
 end
 
-hello_ruby
+num = 0
+
+num = hello_ruby
