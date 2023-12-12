@@ -9,6 +9,9 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
+/.gem_rbs_collection/
+# チーム開発では一旦コメントアウトでおｋ
+# rbs_collection.lock.yaml
 
 # Used by dotenv library to load environment variables.
 # .env
