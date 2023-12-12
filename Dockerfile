@@ -4,6 +4,7 @@ ARG UID
 ARG GID
 
 ENV APP_ROOT="/myapp" \
+    BUNDLE_ROOT="/usr/local/bundle" \
     TZ=Asia/Tokyo \
     UID=${UID} \
     GID=${GID}
@@ -27,6 +28,7 @@ RUN bundle install -j4 && \
 WORKDIR $APP_ROOT
 
 RUN chown -R ${UID}:${GID} ${APP_ROOT}
+RUN chown -R ${UID}:${GID} ${BUNDLE_ROOT}
 COPY . ${APP_ROOT}/
 
 USER ${UID}:${GID}
