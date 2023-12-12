@@ -3,7 +3,7 @@
 
 ## Get Start
 ```bash
-$ docker build -t rbs-playground .
+$ docker build --build-arg UID=$(id -u) --build-arg GID=$(id -g) -t rbs-playground .
 
 $ docker run --rm --name playground -v .:/myapp -itd rbs-playground /bin/bash
 ```
